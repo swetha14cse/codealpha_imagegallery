@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FAVOURITES</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body{
+           background-color:indianred;
+            margin: 0;
+           
+            flex-wrap: wrap;
+            
+            }
+            h1{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            .navbar{
+                display: flex;
+                padding: 10px;
+                background-color:rgb(148, 107, 148)
+            }
+            .row{
+            display: flex;
+            padding: 0px 0px;
+           flex-wrap: wrap;
+            }
+            .column{
+            flex: 33%;
+            max-width: 33%;
+            padding:0px 4px;
+            }
+            .column img{
+                margin-top: 8px;
+                vertical-align:middle;
+                width:100%;
+                transition-duration: .5s;
+                -ms-flex-align:stretch;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .column img:hover{
+                box-shadow:4px 4px 5px rgba(0, 0,0,.9);
+            }
+            @media screen and (max-width:800px) {
+                .column{
+                    flex:50%;
+                    max-width:50%;
+                }
+            }
+            @media screen and (max-width:600px) {
+                .column{
+                    flex:50%;
+                    max-width:50%;
+                }
+            }
+
+           
+        </style>
+        </head>
+        <body>
+            <nav class="navbar">
+                <ul>
+                    <a href="imagegallery.html">GALLERY</a></li>&nbsp; &nbsp; &nbsp;
+                    <a href="favourite.html">FAVOURITES</a></li>
+                </ul>
+         </nav>
+                <h1>FAVOURITES</h1>
+
+                <div class="row">
+
+                    <div class="column">
+                        <img src="img3.jpeg">
+                        <img src="img2.jpg" height="250px" width="500">
+                    </div>
+
+                    <div class="column">
+                      <img src="img5.jpg" >
+                      <img src="img7.jpg" height="250px">
+                    </div>
+
+                    <div class="column">
+                        <img src="img4.jpeg" height="250" >
+                        <img src="img 6.jpg" height="300px">
+                    </div>
+                    
+                </div>
+
+        </body>
+</html>
